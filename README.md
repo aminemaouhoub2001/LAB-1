@@ -18,7 +18,7 @@ Tag et publication de l’image Docker sur Docker Hub.
 
 ---
 
-## 🔧 Étape 1 – API Python (Flask)
+##  Étape 1 – API Python (Flask)
 
 L’API expose des endpoints REST simples :
 
@@ -33,7 +33,7 @@ Fichier principal : `wsgi.py` + dossier `app/`.
 
 ---
 
-## 🐳 Étape 2, 3 et 4 – Docker + Automatisation locale
+##  Étape 2, 3 et 4 – Docker + Automatisation locale
 
 ### Dockerfile
 ```dockerfile
