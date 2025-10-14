@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arithmetic API – Calculatrice</title>
+  <title>Arithmetic API  Calculatrice</title>
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px; }
     .card { max-width: 520px; padding: 24px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid #eee; }
@@ -22,7 +22,7 @@
 </head>
 <body>
   <div class="card">
-    <h1>Calculatrice (via l'API)</h1>
+    <h1>Calculatrice</h1>
     <div class="row">
       <div>
         <label for="a">Nombre A</label>
@@ -45,11 +45,11 @@
     <button id="btn">Calculer</button>
 
     <div class="result" id="out">
-      <div class="hint">Résultat affiché ici…</div>
+      <div class="hint">Résultat...</div>
     </div>
 
     <div class="hint">
-      Les endpoints API sont aussi accessibles directement : <code>/add</code>, <code>/subtract</code>, <code>/multiply</code>, <code>/divide</code>.
+       <code>/add</code>, <code>/subtract</code>, <code>/multiply</code>, <code>/divide</code>.
     </div>
   </div>
 
@@ -74,12 +74,12 @@
 
         const data = await resp.json();
         if (resp.ok) {
-          out.innerHTML = `<div class="ok">✅ ${data.operation}(${data.a}, ${data.b}) = <strong>${data.result}</strong></div>`;
+          out.innerHTML = `<div class="ok"> ${data.operation}(${data.a}, ${data.b}) = <strong>${data.result}</strong></div>`;
         } else {
-          out.innerHTML = `<div class="err">❌ Erreur ${data.error || ''}: ${data.message || JSON.stringify(data.details || data)}</div>`;
+          out.innerHTML = `<div class="err"> Erreur ${data.error || ''}: ${data.message || JSON.stringify(data.details || data)}</div>`;
         }
       } catch (e) {
-        out.innerHTML = `<div class="err">❌ Erreur réseau: ${e}</div>`;
+        out.innerHTML = `<div class="err"> Erreur réseau: ${e}</div>`;
       } finally {
         btn.disabled = false;
       }

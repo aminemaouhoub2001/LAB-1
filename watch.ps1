@@ -1,12 +1,12 @@
-# WATCH DOCKER BUILD & REDEPLOY - CLEAN & SAFE (Windows PowerShell, ASCII)
+# WATCH DOCKER BUILD & REDEPLOY - CLEAN & SAFE
 
 $ErrorActionPreference = "Stop"
-$env:DOCKER_BUILDKIT = "0"   # d?sactive buildx
+$env:DOCKER_BUILDKIT = "0"   
 
 $image     = "arithmetics-api"
 $container = "arithmetics-api"
 $port      = 8000
-$interval  = 2  # secondes
+$interval  = 2  
 
 function Log($m) { Write-Host ("[{0}] {1}" -f (Get-Date -Format HH:mm:ss), $m) }
 

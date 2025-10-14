@@ -8,7 +8,7 @@ $branch    = "main"
 $image     = "arithmetics-api"
 $container = "arithmetics-api"
 $port      = 8000
-$interval  = 30   # secondes entre checks
+$interval  = 30   
 
 function Log($m){ Write-Host ("[{0}] {1}" -f (Get-Date -Format HH:mm:ss), $m) }
 function LocalSha  { (git rev-parse HEAD).Trim() }
