@@ -1,20 +1,20 @@
-# ✅ LAB DevOps – API Python + Docker + Automatisation + Git + Docker Hub
+Objectifs du LAB
 
-Ce projet a pour objectif de mettre en pratique les fondements DevOps à travers la création d’une mini application Python containerisée avec Docker et automatisée à l’aide de scripts. Le projet intègre également GitHub pour la gestion de code source et Docker Hub pour la diffusion d’images.
+Ce projet DevOps comporte 7 étapes principales :
 
----
+Création d'une API Python permettant des opérations arithmétiques (add, subtract, multiply, divide).
 
-## 🎯 Objectifs du LAB
+Mise en place d’un script PowerShell pour surveiller les changements locaux dans le code.
 
-| Étape | Description | Statut |
-|-------|-------------|--------|
-| 1 | Créer une API Python avec opérations add/subtract/multiply/divide | ✅ Fait |
-| 2 | Écrire un script pour surveiller les changements de code | ✅ Fait |
-| 3 | Rebuilder automatiquement l'image Docker si modifications | ✅ Fait |
-| 4 | Déployer automatiquement le container Docker | ✅ Fait |
-| 5 | Créer un repository Git et pousser le code | ✅ Fait |
-| 6 | Détecter de nouveaux commits Git et rebuild auto | ✅ Fait |
-| 7 | Taguer l'image Docker et la pousser sur Docker Hub | ✅ Fait |
+Automatisation de la reconstruction de l’image Docker à chaque modification détectée.
+
+Déploiement automatique du conteneur Docker.
+
+Gestion du code source avec Git et mise en ligne sur GitHub.
+
+Détection automatique des nouveaux commits distants (GitHub) et mise à jour via git_pull.
+
+Tag et publication de l’image Docker sur Docker Hub.
 
 ---
 
